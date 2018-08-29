@@ -1,0 +1,21 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bandsintown-events": "^1.0.4",
+    "dotenv": "^6.0.0",
+    "geocoder": "^0.2.3",
+    "inquirer": "^6.1.0",
+    "mysql": "^2.16.0",
+    "node-spotify-api": "^1.0.7",
+    "weather-js": "^2.0.0",
+    "xhr2": "^0.1.4"
+  },
+  "description": ""
+}
