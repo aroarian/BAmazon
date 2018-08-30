@@ -27,13 +27,45 @@ function available() {
       console.log("Price: $" + results[i].price + ".00");
       console.log("----------------");
     }
-  });
 
-  inquirer
-    .prompt([
-      /* Pass your questions in here */
-    ])
-    .then(answers => {
-      // Use user feedback for... whatever!!
-    });
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "itemID",
+          message: "What item (by ID) would you like to purchase? "
+        },
+        {
+          type: "input",
+          name: "amount",
+          message: "How many would you like to purchase? "
+        }
+      ])
+      .then(answers => {
+        //console.log(answers.itemID);
+        // console.log(results);
+        for (var i = 0; i < results.length; i++) {
+          if (results[i].id === parseInt(answers.itemID)) {
+            //console.log(results[i]);
+            if (results[i].stock_quantity >= parseInt(answers.amount)) {
+              //console.log("Pleanty");
+              var newQuanity = (results[i].stock_quantity - answers.amount);
+              var id = results[i].id;
+              var price = (results[i].price * answers.amount)
+              connection.query(`UPDATE products SET stock_quantity = ${newQuanity} WHERE id = ${id}`, function(err, res){
+                if (err) throw err;
+                //console.log(res);
+
+              console.log(`Your order has been placed. We have charged your card: $${price.toFixed(2)}`);
+              connection.end();
+             })
+            }
+            else{
+              console.log("Not enough in stock.");
+              connection.end();
+            }
+          }
+        }
+      });
+  });
 }
