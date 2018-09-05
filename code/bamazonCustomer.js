@@ -13,7 +13,6 @@ connection.connect(function(err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId);
   available();
-  // connection.end();
 });
 
 function available() {
@@ -42,21 +41,16 @@ function available() {
         }
       ])
       .then(answers => {
-        //console.log(answers.itemID);
-        // console.log(results);
         for (var i = 0; i < results.length; i++) {
           if (results[i].id === parseInt(answers.itemID)) {
-            //console.log(results[i]);
             if (results[i].stock_quantity >= parseInt(answers.amount)) {
-              //console.log("Pleanty");
               var newQuanity = (results[i].stock_quantity - answers.amount);
               var id = results[i].id;
               var price = (results[i].price * answers.amount)
               connection.query(`UPDATE products SET stock_quantity = ${newQuanity} WHERE id = ${id}`, function(err, res){
                 if (err) throw err;
-                //console.log(res);
-
-              console.log(`Your order has been placed. We have charged your card: $${price.toFixed(2)}`);
+              
+                console.log(`Your order has been placed. We have charged your card: $${price.toFixed(2)}`);
               connection.end();
              })
             }
