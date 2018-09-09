@@ -7,7 +7,7 @@ This application grants to the basic abilities to purchase available items and w
 
 Clone the git repo
 ```sh
-git clone 
+git clone git@github.com:aroarian/BAmazon.git
 ```
 
 Once cloned open the repo in your preferred editor
@@ -17,11 +17,11 @@ npm install
 
 ## Usage example
 
-![](screenshots/1.jpg)
+![Available Items](./screenshots/1.jpg)
 
-![](screenshots/2.jpg)
+![Order Items](./screenshots/2.jpg)
 
-![](screenshots/3.jpg)
+![Not Enough Items](./screenshots/3.jpg)
 
 To run or re-run the program type the below into your console
 ```sh
