@@ -17,11 +17,11 @@ npm install
 
 ## Usage example
 
-![Available Items](BAmazon/screenshots/1.jpg)
+![Available Items](https://github.com/aroarian/BAmazon/blob/master/screenshots/1.JPG?raw=true)
 
-![Order Items](BAmazon/screenshots/2.jpg)
+![Order Items](https://github.com/aroarian/BAmazon/blob/master/screenshots/2.JPG?raw=true)
 
-![Not Enough Items](BAmazon/screenshots/3.jpg)
+![Not Enough Items](https://github.com/aroarian/BAmazon/blob/master/screenshots/3.JPG?raw=true)
 
 To run or re-run the program type the below into your console
 ```sh
