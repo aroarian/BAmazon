@@ -1,7 +1,7 @@
 # BAmazon
-> This project was the homework assignment to begin mastering mySql. It simulates a shopping exerience within the console windows.
+> This project was the homework assignment to begin mastering mySql. It simulates a shopping experience within the console windows.
 
-This application grants to the basic abilities to purchase available items and will subtract the amount purchased from the stock. It will also notify you if there is not enough items to fulfill your order.
+This application grants to the basic abilities to purchase available items and will subtract the amount purchased from the stock. It will also notify you if there are not enough items to fulfill your order.
 
 ## Installation
 
