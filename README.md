@@ -17,11 +17,11 @@ npm install
 
 ## Usage example
 
-![Available Items](./screenshots/1.jpg)
+![Available Items](/screenshots/1.jpg)
 
-![Order Items](./screenshots/2.jpg)
+![Order Items](/screenshots/2.jpg)
 
-![Not Enough Items](./screenshots/3.jpg)
+![Not Enough Items](/screenshots/3.jpg)
 
 To run or re-run the program type the below into your console
 ```sh
