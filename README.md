@@ -17,10 +17,13 @@ npm install
 
 ## Usage example
 
+### Available items example
 ![Available Items](https://github.com/aroarian/BAmazon/blob/master/screenshots/1.JPG?raw=true)
 
+### Ordering items example
 ![Order Items](https://github.com/aroarian/BAmazon/blob/master/screenshots/2.JPG?raw=true)
 
+### Not enough items available example
 ![Not Enough Items](https://github.com/aroarian/BAmazon/blob/master/screenshots/3.JPG?raw=true)
 
 To run or re-run the program type the below into your console
@@ -29,6 +32,6 @@ node bamazon.js
 ```
 ## Meta
 
-[https://github.com/yourname/github-link](https://github.com/aroarian)
+[https://github.com/aroarian](https://github.com/aroarian)
 
  
