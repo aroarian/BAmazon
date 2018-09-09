@@ -23,7 +23,7 @@ function available() {
       console.log("----------------");
       console.log("ID: " + results[i].id);
       console.log("Item: " + results[i].product_name);
-      console.log("Price: $" + results[i].price + ".00");
+      console.log("Price: $" + results[i].price);
       console.log("----------------");
     }
 
